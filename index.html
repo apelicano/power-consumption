@@ -10,20 +10,29 @@
     <div class="calculator">
         <h1>Electricity Cost Calculator</h1>
         <form id="calcForm">
+            <label for="appliance">Select Appliance:</label>
+            <select id="appliance">
+                <option value="" selected>Choose an appliance...</option>
+            </select>
+
+        
             <label for="power">Power Rating (W):</label>
-            <input type="number" id="power" name="power" required>
-            
+            <input type="number" id="power" name="power" required placeholder="Enter custom value or select appliance above">
+            <small id="powerHelper">Select appliance to use range; manual entry overrides it.</small>
+
             <label for="time">Operating Time (hours per day):</label>
-            <input type="number" id="time" name="time" required>
+            <input type="number" id="time" name="time" required placeholder="Typical: 1 - 24 hours">
             
             <label for="days">Number of Days (per month):</label>
-            <input type="number" id="days" name="days" required>
+            <input type="number" id="days" name="days" required placeholder="Typical: 1 - 31 days">
             
             <label for="rate">Electricity Rate (PHP per kWh):</label>
-            <input type="number" id="rate" name="rate" step="0.0001" required>
+            <input type="number" id="rate" name="rate" step="0.0001" required placeholder="Typical: 8.00 - 10.00 PHP per kWh">
+
             
+        
             <button type="button" onclick="calculate()">Calculate</button>
-        </form>
+        </form>        
         <div id="results">
             <p id="dailyConsumption"></p>
             <p id="monthlyConsumption"></p>
