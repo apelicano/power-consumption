@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: #121212;
     color: #e0e0e0;
-    padding: 10px; /* Ensure small padding on mobile */
+    padding: 5px;
 }
 
 /* Calculator Container */
@@ -18,8 +18,8 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 90%; /* Adjust width for mobile */
-    max-width: 400px; /* Prevent excessive stretching */
+    width: 90%;
+    max-width: 350px; /* Slightly narrower for mobile */
 }
 
 /* Form Elements */
@@ -27,21 +27,43 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
-input, select, button {
-    padding: 12px;
-    font-size: 1rem;
+label {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+input, select {
+    width: 85%;
+    max-width: 200px; /* Much narrower */
+    padding: 8px;
+    font-size: 0.9rem;
     border-radius: 5px;
-    border: none;
-    width: 100%;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    text-align: center; /* Centers input for better readability */
+}
+
+input::placeholder {
+    color: #bbb;
+    font-size: 0.85rem;
 }
 
 /* Button */
 button {
+    width: 80%; /* Make button narrower */
+    max-width: 180px; /* Prevent stretching */
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
     background-color: #0077ff;
     color: #fff;
-    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -55,20 +77,20 @@ button:hover {
     padding: 12px;
     background-color: #222;
     border-radius: 5px;
+    width: 90%;
+    max-width: 300px;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    body {
-        padding: 5px;
-    }
-
     .calculator {
         width: 95%;
-        max-width: 350px;
+        max-width: 300px; /* Slightly more compact */
     }
 
     input, select, button {
-        font-size: 0.9rem;
+        width: 90%;
+        max-width: 170px;
+        font-size: 0.85rem;
     }
 }
