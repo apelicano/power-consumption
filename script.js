@@ -67,8 +67,8 @@ function calculate() {
         monthlyConsumption = dailyConsumption * days;
         monthlyCost = monthlyConsumption * rate;
 
-        document.getElementById("dailyConsumption").innerText = `Daily Energy Consumption: ${dailyConsumption.toFixed(2)} kWh`;
-        document.getElementById("monthlyConsumption").innerText = `Monthly Energy Consumption: ${monthlyConsumption.toFixed(2)} kWh`;
+        document.getElementById("dailyConsumption").innerText = `Daily Consumption: ${dailyConsumption.toFixed(2)} kWh`;
+        document.getElementById("monthlyConsumption").innerText = `Monthly Consumption: ${monthlyConsumption.toFixed(2)} kWh`;
         document.getElementById("monthlyCost").innerText = `Monthly Cost: ₱ ${monthlyCost.toFixed(2)}`;
     } else if (!isNaN(minPower) && !isNaN(maxPower)) {
         // Use min/max range for calculations
@@ -81,9 +81,9 @@ function calculate() {
         const monthlyCostMin = monthlyConsumptionMin * rate;
         const monthlyCostMax = monthlyConsumptionMax * rate;
 
-        document.getElementById("dailyConsumption").innerText = `Daily Energy Consumption: ${dailyConsumptionMin.toFixed(2)} to ${dailyConsumptionMax.toFixed(2)} kWh`;
-        document.getElementById("monthlyConsumption").innerText = `Monthly Energy Consumption: ${monthlyConsumptionMin.toFixed(2)} to ${monthlyConsumptionMax.toFixed(2)} kWh`;
-        document.getElementById("monthlyCost").innerText = `Monthly Cost: ₱ ${monthlyCostMin.toFixed(2)} to ₱ ${monthlyCostMax.toFixed(2)}`;
+        document.getElementById("dailyConsumption").innerText = `Daily Consumption: ${dailyConsumptionMin.toFixed(2)} - ${dailyConsumptionMax.toFixed(2)} kWh`;
+        document.getElementById("monthlyConsumption").innerText = `Monthly Consumption: ${monthlyConsumptionMin.toFixed(2)} - ${monthlyConsumptionMax.toFixed(2)} kWh`;
+        document.getElementById("monthlyCost").innerText = `Monthly Cost: ₱ ${monthlyCostMin.toFixed(2)} - ₱ ${monthlyCostMax.toFixed(2)}`;
     } else {
         alert("Please select an appliance or manually enter a power rating.");
     }

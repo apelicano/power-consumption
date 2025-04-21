@@ -1,41 +1,101 @@
-### **Web App Implementation of the Typical Math Problem...**
-**Objective:** Calculate the monthly electrical cost and consumption of a household appliance.
-### **Input Variables:**
-1. **Power Rating (P)**:
-    - Measured in watts (W) or kilowatts (kW).
-2. **Input Voltage (V)**:
-    - Voltage at which the appliance operates, typically in volts (V).
-3. **Frequency (f)**:
-    - Operating frequency of the appliance, typically in hertz (Hz).
-4. **Manufacturer's Efficiency Rating (η)**:
-    - Efficiency of the appliance, typically in percentage (%).
-5. **Operating Time (t)**:
-    - The number of hours the appliance is used per day.
-6. **Number of Days in a Month (d)**:
-    - The number of days the appliance is used in a month, typically 30 or 31.
-7. **Electricity Rate (R)**:
-    - Cost of electricity per kilowatt-hour (kWh), typically in ₱/kWh.
+# Electricity Cost Calculator
 
-### **Outputs:**
-1. **Daily Energy Consumption (E$_{daily}$)**:
-    - Measured in kilowatt-hours (kWh).
-    - Formula: E$_{daily}$ = $\frac{P ⨯ t}{1,000}$
-2. **Monthly Energy Consumption (E$_{monthly}$)**:
-    - Measured in kilowatt-hours (kWh).
-    - Formula: E$_{monthly}$ = E$_{daily}$ ⨯ d
-3. **Monthly Cost (C$_{monthly}$)**:
-    - Measured in ₱ (PHP).
-    - Formula: C$_{monthly}$ = E$_{monthly}$ ⨯ R
+A lightweight, web-based tool that helps you calculate the electricity cost for your appliances. This project uses a minimalist, responsive design with floating labels for a clean, intuitive user interface.
 
-### **Example Calculation:**
-Let's assume an appliance with the following characteristics:
-- **Power Rating (P)**: 500W (or 0.5kW)
-- **Operating Time (t)**: 4 hours per day
-- **Number of Days in a Month (d)**: 30 days
-- **Electricity Rate (R)**:₱17.8966 per kWh
-1. **Daily Energy Consumption**:
-    - E$_{daily}$ = $\frac{500 W ⨯ 4 hours}{1,000}$ = 2 $\text{kWh}$
-2. **Monthly Energy Consumption**:
-    - E$_{monthly}$ = 2 $\text{kWh/day}$ ⨯ 30 $\text{days}$ = 60 $\text{kWh}$
-3. **Monthly Cost**:
-    - C$_{monthly}$= 60 $\text{kWh}$ ⨯ 17.8966 $\text{₱/kWh}$ = ₱1,073.80
+## Features
+
+- **Floating Label Form:**  
+  Each input field uses a floating label design for a modern and minimalistic appearance.
+  
+- **Appliance Selector:**  
+  Choose from a pre-defined list of appliances or enter custom power values.
+  
+- **Real-time Calculation:**  
+  Instantly compute daily and monthly consumption and electricity cost based on your inputs.
+  
+- **Responsive Design:**  
+  Optimized for all screen sizes—desktop, tablet, and mobile.
+  
+- **Support Footer:**  
+  Non-intrusive footer offering options to support the developer via Maya or Bitcoin. 
+
+- **Hosted on GitHub Pages:**  
+  Easily deployable for free via GitHub Pages.
+
+## Live Demo
+
+Check out the live demo on [GitHub Pages](https://apelicano.github.io/power-consumption/)  
+*(Replace with your actual URL)*
+
+## Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Safari, etc.)
+- A code editor (optional—for customization)
+
+### Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/apelicano/power-consumption.git
+   cd Electricity-Cost-Calculator
+   ```
+
+2. **Open `index.html` in Your Browser:**  
+   Simply double-click the file or drag it into your browser window.
+
+Alternatively, deploy this project to GitHub Pages:
+- Push your repository to GitHub.
+- In your repository settings, enable GitHub Pages, choosing the branch that contains your project.
+
+## How to Use
+
+1. **Select an Appliance:**  
+   Use the dropdown to choose an appliance, or enter a custom power rating.
+   
+2. **Enter Parameters:**  
+   Fill in the power rating (W), operating hours per day, number of days per month, and the electricity rate (PHP per kWh).
+   
+3. **Calculate:**  
+   Click the “Calculate” button to view your device’s daily and monthly energy consumption as well as the cost.
+   
+4. **Consider Supporting the Project:**  
+   If you find this web app useful, please consider showing your support using the donation links in the footer.
+
+## Customization
+
+- **UI Adjustments:**  
+  Modify the `styles.css` file to adjust the look and feel of the application.
+  
+- **Functionality Enhancements:**  
+  Update `script.js` to add new features, validations, or any custom logic.
+  
+- **Updating Appliance List:**  
+  Customize the appliance options by editing the `<select>` element inside `index.html`.
+
+## Support & Donations
+
+If you found this web app valuable, please consider supporting the developer:
+
+- **PayMaya:**  
+  [Support via PayMaya](https://www.paymaya.com/app/sendmoney?p=eyJyIjoiKzYzOTE3NzAyMTA5MiIsInQiOiJQQVlNQVlBIiwiYyI6IlBIUCIsImEiOiIwLjAwIn0%3D)  
+  
+- **Bitcoin:**  
+  [Donate via Bitcoin](bitcoin:19EzQL1g1Uf2VNWNUAraj1CBtY4KbZKCpW)  
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- **Open-Source Community:**  
+  Thanks to all contributors and inspiration from various web-based utility projects and minimalist UI designs.
+
+---
+
+Feel free to contribute, give feedback, or reach out with suggestions. Happy calculating!
