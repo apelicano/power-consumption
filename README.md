@@ -58,7 +58,7 @@ Alternatively, deploy this project to GitHub Pages:
    Use the dropdown to choose an appliance, or enter a custom power rating.
    
 2. **Enter Parameters:**  
-   Fill in the power rating (W), operating hours per day, number of days per month, and the electricity rate (PHP per kWh).
+   Fill in the power rating (W), operating hours per day, number of days per month, and the electricity rate (₱ per kWh).
    
 3. **Calculate:**  
    Click the “Calculate” button to view your device’s daily and monthly energy consumption as well as the cost.
