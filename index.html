@@ -18,14 +18,17 @@
         </select>
         <label for="appliance">Select Appliance</label>
       </div>
-      <small id="powerHelper0">Select for a pre-set <strong>range</strong> of appliance ratings.</small>
+      <small id="powerHelper0">Choose an appliance for typical power usage presets.</small>
+
       
       <!-- Power Rating (W) -->
       <div class="floating-group">
         <input type="number" id="power" name="power" required placeholder=" " autocomplete="off">
         <label for="power">Power Rating (W)</label>
       </div>
-      <small id="powerHelper1"><strong>Single</strong> manual entry to override selected range above.</small>
+      <!-- <small id="powerHelper1">Enter a custom power rating if different from preset values.</small> -->
+      <small id="powerHelper1">Override preset ranges with a single fixed power rating.</small>
+
       
       <!-- Operating Time (hours per day) -->
       <div class="floating-group">
